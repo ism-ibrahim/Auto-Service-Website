@@ -219,7 +219,540 @@
                         transition: 0.7s
                         cursor: pointer
                         color: #e80707
-    @media screen and ( min-width: 768px ) and (max-width: 1023px)
+    @media screen and ( min-width: 320px ) and ( max-width: 375px )
+        .imgbox
+            margin-top: 0
+            width: 60vw
+        .textbox
+            display: none
+            h4,h5,h6
+                display: none
+            i
+                display: none
+            .iconbox
+                display: none
+                ul
+                    display: none
+                    li
+                        .icon
+                            display: none
+        .button
+            margin-bottom: 10px
+            text-align: center
+            h3
+                font-size: 0.4em
+            h1
+                font-size: 0.5em
+                font-weight: 700
+                margin: 1px 0 1px
+                span
+                    font-size: 4px
+            a
+                font-size: 0.2em
+                i
+                    font-size: 0.8vw
+            .pop_up
+                width: 100%
+                height: 100%
+                position: fixed
+                left: 2em
+                top: 2em
+                background-color: transparent
+                z-index: 2
+                transform: translateY(-44.5%) scale(0%)
+                transition: .4s ease-in-out
+            .pop_up.active
+                transform: translateY(1%) scale(90%) translateX(-3%)
+            .pop_up_container
+                display: flex
+                width: 100%
+                height: 100%
+            .pop_up_body
+                margin: auto
+                width: 30vw
+                height: 36vw
+                background-color: #000
+                border-radius: 10px
+                text-align: center
+                padding: 18px 15px 60px 15px
+                position: relative
+                h1
+                    font-size: 1.6vw
+                    font-family: Montserrat
+                    color: #fff
+                    margin: 25px 0 18px
+                p
+                    font-size: 0.8vw
+                    font-family: Montserrat
+                    color: #fff
+                    margin-bottom: 0
+                input
+                    display: block
+                    margin: 25px auto 0px auto
+                    width: 15vw
+                    padding: 14px 20px
+                    background-color: #fff
+                    border-radius: 30px
+                    border: none
+                    font-family: montserrat
+                    font-weight: 500
+                    font-size: 1vw
+                    color: #000
+                input:focus
+                    outline: none
+                button
+                    cursor: pointer
+                    display: block
+                    width: 15em
+                    margin: 20px auto 0 auto
+                    padding: 15px 0px
+                    font-family: Montserrat
+                    font-weight: 500
+                    font-size: 1vw
+                    border: none
+                    color: #fff
+                    border-radius: 30px
+                    background-color: #e80707
+                    transition: 0.5s
+                    &:disabled
+                        cursor: not-allowed
+                    &:hover
+                        opacity: 0.8
+                        transition: 0.5s
+                .checkbox
+                    input
+                        margin: 21px 4px 9px 35px
+                        width: 2vw
+                        background-color: #e80707
+                        cursor: pointer
+                    h6
+                        text-align: center
+                        display: flex
+                        color: #fff
+                        text-align: left
+                        font-size: 0.8vw
+                        padding: 20px 4px 1px 1px
+                        cursor: pointer
+            .pop_up_close
+                position: absolute
+                top: 15px
+                right: 15px
+                font-size: 0.1vw
+                cursor: pointer
+                color: #fff
+            i
+                cursor: pointer
+                color: #fff
+                font-size: 1.7vw
+            .pop_up_ok
+                width: 100%
+                height: 100%
+                position: fixed
+                left: 2em
+                top: 2em
+                background-color: transparent
+                z-index: 2
+                transform: translateY(-44.5%) scale(0%)
+                transition: .4s ease-in-out
+            .pop_up_ok.active
+                transform: translateY(1%) scale(90%) translateX(-3%)
+            .pop_up_ok_container
+                display: flex
+                width: 100%
+                height: 100%
+            .pop_up_ok_body
+                margin: auto
+                width: 16vw
+                height: 9vw
+                background-color: #2e2d2d
+                border-radius: 25px
+                text-align: center
+                padding: 9px 7px 30px 7px
+                position: relative
+                h1
+                    font-size: 1vw
+                    font-family: Montserrat
+                    color: #fff
+                    margin: 18px 0 9px
+                button
+                    cursor: pointer
+                    width: 9em
+                    margin: 10px auto 0 auto
+                    padding: 10px 0px
+                    font-family: Montserrat
+                    font-weight: 500
+                    font-size: 0.8vw
+                    border: none
+                    color: #fff
+                    border-radius: 15px
+                    background-color: #e80707
+                    transition: 0.5s
+        .menu
+            nav
+                display: none
+    @media screen and ( min-width: 376px ) and ( max-width: 424px )
+        .imgbox
+            margin-top: 0
+            width: 45vw
+        .textbox
+            display: none
+            h4,h5,h6
+                display: none
+            i
+                display: none
+            .iconbox
+                display: none
+                ul
+                    display: none
+                    li
+                        .icon
+                            display: none
+        .button
+            text-align: center
+            margin-bottom: 10px
+            h3
+                font-size: 0.4em
+            h1
+                font-size: 0.5em
+                font-weight: 700
+                margin: 1px 0 1px
+                span
+                    color: #e80707
+                    font-size: 4px
+            a
+                font-family: Montserrat
+                color: #000
+                font-size: 0.2em
+                text-decoration: underline #e80707
+                transition: 0.6s
+                &:hover
+                    cursor: pointer
+                    transition: 0.6s
+                    color: #e80707
+                i
+                    font-size: 0.6vw
+                    color: red
+            .pop_up
+                width: 100%
+                height: 100%
+                position: fixed
+                left: 2em
+                top: 2em
+                background-color: transparent
+                z-index: 2
+                transform: translateY(-44.5%) scale(0%)
+                transition: .4s ease-in-out
+            .pop_up.active
+                transform: translateY(1%) scale(90%) translateX(-3%)
+            .pop_up_container
+                display: flex
+                width: 100%
+                height: 100%
+            .pop_up_body
+                margin: auto
+                width: 30vw
+                height: 36vw
+                background-color: #000
+                border-radius: 10px
+                text-align: center
+                padding: 18px 15px 60px 15px
+                position: relative
+                h1
+                    font-size: 1.6vw
+                    font-family: Montserrat
+                    color: #fff
+                    margin: 25px 0 18px
+                p
+                    font-size: 0.8vw
+                    font-family: Montserrat
+                    color: #fff
+                    margin-bottom: 0
+                input
+                    display: block
+                    margin: 25px auto 0px auto
+                    width: 15vw
+                    padding: 14px 20px
+                    background-color: #fff
+                    border-radius: 30px
+                    border: none
+                    font-family: montserrat
+                    font-weight: 500
+                    font-size: 1vw
+                    color: #000
+                input:focus
+                    outline: none
+                button
+                    cursor: pointer
+                    display: block
+                    width: 15em
+                    margin: 20px auto 0 auto
+                    padding: 15px 0px
+                    font-family: Montserrat
+                    font-weight: 500
+                    font-size: 1vw
+                    border: none
+                    color: #fff
+                    border-radius: 30px
+                    background-color: #e80707
+                    transition: 0.5s
+                    &:disabled
+                        cursor: not-allowed
+                    &:hover
+                        opacity: 0.8
+                        transition: 0.5s
+                .checkbox
+                    input
+                        margin: 21px 4px 9px 35px
+                        width: 2vw
+                        background-color: #e80707
+                        cursor: pointer
+                    h6
+                        text-align: center
+                        display: flex
+                        color: #fff
+                        text-align: left
+                        font-size: 0.8vw
+                        padding: 20px 4px 1px 1px
+                        cursor: pointer
+            .pop_up_close
+                position: absolute
+                top: 15px
+                right: 15px
+                font-size: 0.1vw
+                cursor: pointer
+                color: #fff
+            i
+                cursor: pointer
+                color: #fff
+                font-size: 1.7vw
+            .pop_up_ok
+                width: 100%
+                height: 100%
+                position: fixed
+                left: 2em
+                top: 2em
+                background-color: transparent
+                z-index: 2
+                transform: translateY(-44.5%) scale(0%)
+                transition: .4s ease-in-out
+            .pop_up_ok.active
+                transform: translateY(1%) scale(90%) translateX(-3%)
+            .pop_up_ok_container
+                display: flex
+                width: 100%
+                height: 100%
+            .pop_up_ok_body
+                margin: auto
+                width: 16vw
+                height: 9vw
+                background-color: #2e2d2d
+                border-radius: 25px
+                text-align: center
+                padding: 9px 7px 30px 7px
+                position: relative
+                h1
+                    font-size: 1vw
+                    font-family: Montserrat
+                    color: #fff
+                    margin: 18px 0 9px
+                button
+                    cursor: pointer
+                    width: 9em
+                    margin: 10px auto 0 auto
+                    padding: 10px 0px
+                    font-family: Montserrat
+                    font-weight: 500
+                    font-size: 0.8vw
+                    border: none
+                    color: #fff
+                    border-radius: 15px
+                    background-color: #e80707
+                    transition: 0.5s
+        .menu
+            nav
+                display: none
+    @media screen and ( min-width: 425px ) and ( max-width: 767px )
+        .imgbox
+            margin-top: 0
+            width: 50vw
+        .textbox
+            display: none
+            h4,h5,h6
+                display: none
+            i
+                display: none
+            .iconbox
+                display: none
+                ul
+                    display: none
+                    li
+                        .icon
+                            display: none
+        .button
+            text-align: center
+            margin-bottom: 10px
+            h3
+                font-size: 0.4em
+            h1
+                font-size: 0.5em
+                font-weight: 700
+                margin: 1px 0 1px
+                span
+                    color: #e80707
+                    font-size: 4px
+            a
+                font-family: Montserrat
+                color: #000
+                font-size: 0.2em
+                text-decoration: underline #e80707
+                transition: 0.6s
+                &:hover
+                    cursor: pointer
+                    transition: 0.6s
+                    color: #e80707
+                i
+                    font-size: 0.6vw
+                    color: red
+            .pop_up
+                width: 100%
+                height: 100%
+                position: fixed
+                left: 2em
+                top: 2em
+                background-color: transparent
+                z-index: 2
+                transform: translateY(-44.5%) scale(0%)
+                transition: .4s ease-in-out
+            .pop_up.active
+                transform: translateY(1%) scale(90%) translateX(-3%)
+            .pop_up_container
+                display: flex
+                width: 100%
+                height: 100%
+            .pop_up_body
+                margin: auto
+                width: 30vw
+                height: 36vw
+                background-color: #000
+                border-radius: 10px
+                text-align: center
+                padding: 18px 15px 60px 15px
+                position: relative
+                h1
+                    font-size: 1.6vw
+                    font-family: Montserrat
+                    color: #fff
+                    margin: 25px 0 18px
+                p
+                    font-size: 0.8vw
+                    font-family: Montserrat
+                    color: #fff
+                    margin-bottom: 0
+                input
+                    display: block
+                    margin: 25px auto 0px auto
+                    width: 15vw
+                    padding: 14px 20px
+                    background-color: #fff
+                    border-radius: 30px
+                    border: none
+                    font-family: montserrat
+                    font-weight: 500
+                    font-size: 1vw
+                    color: #000
+                input:focus
+                    outline: none
+                button
+                    cursor: pointer
+                    display: block
+                    width: 15em
+                    margin: 20px auto 0 auto
+                    padding: 15px 0px
+                    font-family: Montserrat
+                    font-weight: 500
+                    font-size: 1vw
+                    border: none
+                    color: #fff
+                    border-radius: 30px
+                    background-color: #e80707
+                    transition: 0.5s
+                    &:disabled
+                        cursor: not-allowed
+                    &:hover
+                        opacity: 0.8
+                        transition: 0.5s
+                .checkbox
+                    input
+                        margin: 21px 4px 9px 35px
+                        width: 2vw
+                        background-color: #e80707
+                        cursor: pointer
+                    h6
+                        text-align: center
+                        display: flex
+                        color: #fff
+                        text-align: left
+                        font-size: 0.8vw
+                        padding: 20px 4px 1px 1px
+                        cursor: pointer
+            .pop_up_close
+                position: absolute
+                top: 15px
+                right: 15px
+                font-size: 0.1vw
+                cursor: pointer
+                color: #fff
+            i
+                cursor: pointer
+                color: #fff
+                font-size: 1.7vw
+            .pop_up_ok
+                width: 100%
+                height: 100%
+                position: fixed
+                left: 2em
+                top: 2em
+                background-color: transparent
+                z-index: 2
+                transform: translateY(-44.5%) scale(0%)
+                transition: .4s ease-in-out
+            .pop_up_ok.active
+                transform: translateY(1%) scale(90%) translateX(-3%)
+            .pop_up_ok_container
+                display: flex
+                width: 100%
+                height: 100%
+            .pop_up_ok_body
+                margin: auto
+                width: 16vw
+                height: 9vw
+                background-color: #2e2d2d
+                border-radius: 25px
+                text-align: center
+                padding: 9px 7px 30px 7px
+                position: relative
+                h1
+                    font-size: 1vw
+                    font-family: Montserrat
+                    color: #fff
+                    margin: 18px 0 9px
+                button
+                    cursor: pointer
+                    width: 9em
+                    margin: 10px auto 0 auto
+                    padding: 10px 0px
+                    font-family: Montserrat
+                    font-weight: 500
+                    font-size: 0.8vw
+                    border: none
+                    color: #fff
+                    border-radius: 15px
+                    background-color: #e80707
+                    transition: 0.5s
+        .menu
+            nav
+                display: none
+    @media screen and ( min-width: 768px ) and ( max-width: 1023px )
         .imgbox
             margin-top: 10px
             width: 15vw
@@ -439,7 +972,7 @@
                             transition: 0.7s
                             cursor: pointer
                             color: #e80707
-    @media screen and ( min-width: 1024px ) and ( max-width: 1439px)
+    @media screen and ( min-width: 1024px ) and ( max-width: 1439px )
         .imgbox
             img
                 margin-top: 10px
@@ -660,7 +1193,7 @@
                             transition: 0.7s
                             cursor: pointer
                             color: #e80707
-    @media screen and ( min-width: 1440px ) and ( max-width: 2559px)
+    @media screen and ( min-width: 1440px ) and ( max-width: 2559px )
         .imgbox
             width: 18vw
         .textbox

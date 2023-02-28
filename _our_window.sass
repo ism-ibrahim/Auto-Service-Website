@@ -56,6 +56,8 @@
                 font-size: 1vw
                 cursor: pointer
     .minitextbox
+        display: flex
+        align-items: flex-end
         p
             border-right: 2px solid #757373
             height: 9vh
@@ -67,6 +69,108 @@
             span
                 color: #fff
                 font-weight: 700
+    @media screen and ( min-width: 320px ) and ( max-width: 375px )
+        padding: 130px 0
+        .textbox
+            display: flex
+            flex-direction: column
+            margin: 3px 0 0 10px
+            h1,h6
+                font-size: 5vw
+                text-align: left
+                line-height: 1.5em
+                margin-bottom: 10px
+                span
+                    font-weight: 700
+            h6
+                font-size: 2.5vw
+        .btnbox
+            display: flex
+            flex-direction: column
+            margin: 0
+            .btn
+                font-size: 1.5vh
+                padding: 11px 87px
+                margin: 9px
+                span
+                    display: none
+            .btn-2
+                font-size: 1.4vh
+                padding: 11px 75px
+                i
+                    margin-right: 5px
+                    font-size: 2vh
+        .minitextbox
+            p
+                display: none
+    @media screen and ( min-width: 376px ) and ( max-width: 424px )
+        padding: 130px 0
+        .textbox
+            display: flex
+            flex-direction: column
+            margin: 3px 0 0 10px
+            h1,h6
+                font-size: 5vw
+                text-align: left
+                line-height: 1.5em
+                margin-bottom: 10px
+                span
+                    font-weight: 700
+            h6
+                font-size: 2.5vw
+        .btnbox
+            display: flex
+            flex-direction: column
+            margin: 0
+            .btn
+                font-size: 1.5vh
+                padding: 9px 91px
+                margin: 9px
+                span
+                    display: none
+            .btn-2
+                font-size: 1.4vh
+                padding: 11px 75px
+                i
+                    margin-right: 5px
+                    font-size: 2vh
+        .minitextbox
+            p
+                display: none
+    @media screen and ( min-width: 425px ) and ( max-width: 767px )
+        padding: 130px 0
+        .textbox
+            display: flex
+            flex-direction: column
+            margin: 3px 0 0 10px
+            h1,h6
+                font-size: 5vw
+                text-align: left
+                line-height: 1.5em
+                margin-bottom: 10px
+                span
+                    font-weight: 700
+            h6
+                font-size: 2.5vw
+        .btnbox
+            display: flex
+            flex-direction: column
+            margin: 0
+            .btn
+                font-size: 2.3vh
+                padding: 9px 91px
+                margin: 9px
+                span
+                    display: none
+            .btn-2
+                font-size: 2.3vh
+                padding: 13px 72px
+                i
+                    margin-right: 5px
+                    font-size: 2vh
+        .minitextbox
+            p
+                display: none
     @media screen and ( min-width: 768px ) and ( max-width: 1023px )
         .textbox
             display: flex
@@ -263,10 +367,6 @@
                     color: #fff
                     font-weight: 700
     @media screen and ( min-width: 2560px )
-        // position: fixed
-        // width: 1300px
-        // top: 200px
-        // left: 625px
         .textbox
             display: flex
             flex-direction: column

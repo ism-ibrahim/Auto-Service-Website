@@ -278,6 +278,642 @@ section {
   cursor: pointer;
   color: #e80707;
 }
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  #header .imgbox {
+    margin-top: 0;
+    width: 60vw;
+  }
+  #header .textbox {
+    display: none;
+  }
+  #header .textbox h4, #header .textbox h5, #header .textbox h6 {
+    display: none;
+  }
+  #header .textbox i {
+    display: none;
+  }
+  #header .textbox .iconbox {
+    display: none;
+  }
+  #header .textbox .iconbox ul {
+    display: none;
+  }
+  #header .textbox .iconbox ul li .icon {
+    display: none;
+  }
+  #header .button {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #header .button h3 {
+    font-size: 0.4em;
+  }
+  #header .button h1 {
+    font-size: 0.5em;
+    font-weight: 700;
+    margin: 1px 0 1px;
+  }
+  #header .button h1 span {
+    font-size: 4px;
+  }
+  #header .button a {
+    font-size: 0.2em;
+  }
+  #header .button a i {
+    font-size: 0.8vw;
+  }
+  #header .button .pop_up {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 2em;
+    top: 2em;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0%);
+    transition: 0.4s ease-in-out;
+  }
+  #header .button .pop_up.active {
+    transform: translateY(1%) scale(90%) translateX(-3%);
+  }
+  #header .button .pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #header .button .pop_up_body {
+    margin: auto;
+    width: 30vw;
+    height: 36vw;
+    background-color: #000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 18px 15px 60px 15px;
+    position: relative;
+  }
+  #header .button .pop_up_body h1 {
+    font-size: 1.6vw;
+    font-family: Montserrat;
+    color: #fff;
+    margin: 25px 0 18px;
+  }
+  #header .button .pop_up_body p {
+    font-size: 0.8vw;
+    font-family: Montserrat;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  #header .button .pop_up_body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 15vw;
+    padding: 14px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    font-family: montserrat;
+    font-weight: 500;
+    font-size: 1vw;
+    color: #000;
+  }
+  #header .button .pop_up_body input:focus {
+    outline: none;
+  }
+  #header .button .pop_up_body button {
+    cursor: pointer;
+    display: block;
+    width: 15em;
+    margin: 20px auto 0 auto;
+    padding: 15px 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1vw;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #e80707;
+    transition: 0.5s;
+  }
+  #header .button .pop_up_body button:disabled {
+    cursor: not-allowed;
+  }
+  #header .button .pop_up_body button:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+  #header .button .pop_up_body .checkbox input {
+    margin: 21px 4px 9px 35px;
+    width: 2vw;
+    background-color: #e80707;
+    cursor: pointer;
+  }
+  #header .button .pop_up_body .checkbox h6 {
+    text-align: center;
+    display: flex;
+    color: #fff;
+    text-align: left;
+    font-size: 0.8vw;
+    padding: 20px 4px 1px 1px;
+    cursor: pointer;
+  }
+  #header .button .pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.1vw;
+    cursor: pointer;
+    color: #fff;
+  }
+  #header .button i {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.7vw;
+  }
+  #header .button .pop_up_ok {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 2em;
+    top: 2em;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0%);
+    transition: 0.4s ease-in-out;
+  }
+  #header .button .pop_up_ok.active {
+    transform: translateY(1%) scale(90%) translateX(-3%);
+  }
+  #header .button .pop_up_ok_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #header .button .pop_up_ok_body {
+    margin: auto;
+    width: 16vw;
+    height: 9vw;
+    background-color: #2e2d2d;
+    border-radius: 25px;
+    text-align: center;
+    padding: 9px 7px 30px 7px;
+    position: relative;
+  }
+  #header .button .pop_up_ok_body h1 {
+    font-size: 1vw;
+    font-family: Montserrat;
+    color: #fff;
+    margin: 18px 0 9px;
+  }
+  #header .button .pop_up_ok_body button {
+    cursor: pointer;
+    width: 9em;
+    margin: 10px auto 0 auto;
+    padding: 10px 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.8vw;
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    background-color: #e80707;
+    transition: 0.5s;
+  }
+  #header .menu nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 424px) {
+  #header .imgbox {
+    margin-top: 0;
+    width: 45vw;
+  }
+  #header .textbox {
+    display: none;
+  }
+  #header .textbox h4, #header .textbox h5, #header .textbox h6 {
+    display: none;
+  }
+  #header .textbox i {
+    display: none;
+  }
+  #header .textbox .iconbox {
+    display: none;
+  }
+  #header .textbox .iconbox ul {
+    display: none;
+  }
+  #header .textbox .iconbox ul li .icon {
+    display: none;
+  }
+  #header .button {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #header .button h3 {
+    font-size: 0.4em;
+  }
+  #header .button h1 {
+    font-size: 0.5em;
+    font-weight: 700;
+    margin: 1px 0 1px;
+  }
+  #header .button h1 span {
+    color: #e80707;
+    font-size: 4px;
+  }
+  #header .button a {
+    font-family: Montserrat;
+    color: #000;
+    font-size: 0.2em;
+    -webkit-text-decoration: underline #e80707;
+            text-decoration: underline #e80707;
+    transition: 0.6s;
+  }
+  #header .button a:hover {
+    cursor: pointer;
+    transition: 0.6s;
+    color: #e80707;
+  }
+  #header .button a i {
+    font-size: 0.6vw;
+    color: red;
+  }
+  #header .button .pop_up {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 2em;
+    top: 2em;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0%);
+    transition: 0.4s ease-in-out;
+  }
+  #header .button .pop_up.active {
+    transform: translateY(1%) scale(90%) translateX(-3%);
+  }
+  #header .button .pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #header .button .pop_up_body {
+    margin: auto;
+    width: 30vw;
+    height: 36vw;
+    background-color: #000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 18px 15px 60px 15px;
+    position: relative;
+  }
+  #header .button .pop_up_body h1 {
+    font-size: 1.6vw;
+    font-family: Montserrat;
+    color: #fff;
+    margin: 25px 0 18px;
+  }
+  #header .button .pop_up_body p {
+    font-size: 0.8vw;
+    font-family: Montserrat;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  #header .button .pop_up_body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 15vw;
+    padding: 14px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    font-family: montserrat;
+    font-weight: 500;
+    font-size: 1vw;
+    color: #000;
+  }
+  #header .button .pop_up_body input:focus {
+    outline: none;
+  }
+  #header .button .pop_up_body button {
+    cursor: pointer;
+    display: block;
+    width: 15em;
+    margin: 20px auto 0 auto;
+    padding: 15px 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1vw;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #e80707;
+    transition: 0.5s;
+  }
+  #header .button .pop_up_body button:disabled {
+    cursor: not-allowed;
+  }
+  #header .button .pop_up_body button:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+  #header .button .pop_up_body .checkbox input {
+    margin: 21px 4px 9px 35px;
+    width: 2vw;
+    background-color: #e80707;
+    cursor: pointer;
+  }
+  #header .button .pop_up_body .checkbox h6 {
+    text-align: center;
+    display: flex;
+    color: #fff;
+    text-align: left;
+    font-size: 0.8vw;
+    padding: 20px 4px 1px 1px;
+    cursor: pointer;
+  }
+  #header .button .pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.1vw;
+    cursor: pointer;
+    color: #fff;
+  }
+  #header .button i {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.7vw;
+  }
+  #header .button .pop_up_ok {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 2em;
+    top: 2em;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0%);
+    transition: 0.4s ease-in-out;
+  }
+  #header .button .pop_up_ok.active {
+    transform: translateY(1%) scale(90%) translateX(-3%);
+  }
+  #header .button .pop_up_ok_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #header .button .pop_up_ok_body {
+    margin: auto;
+    width: 16vw;
+    height: 9vw;
+    background-color: #2e2d2d;
+    border-radius: 25px;
+    text-align: center;
+    padding: 9px 7px 30px 7px;
+    position: relative;
+  }
+  #header .button .pop_up_ok_body h1 {
+    font-size: 1vw;
+    font-family: Montserrat;
+    color: #fff;
+    margin: 18px 0 9px;
+  }
+  #header .button .pop_up_ok_body button {
+    cursor: pointer;
+    width: 9em;
+    margin: 10px auto 0 auto;
+    padding: 10px 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.8vw;
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    background-color: #e80707;
+    transition: 0.5s;
+  }
+  #header .menu nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  #header .imgbox {
+    margin-top: 0;
+    width: 50vw;
+  }
+  #header .textbox {
+    display: none;
+  }
+  #header .textbox h4, #header .textbox h5, #header .textbox h6 {
+    display: none;
+  }
+  #header .textbox i {
+    display: none;
+  }
+  #header .textbox .iconbox {
+    display: none;
+  }
+  #header .textbox .iconbox ul {
+    display: none;
+  }
+  #header .textbox .iconbox ul li .icon {
+    display: none;
+  }
+  #header .button {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #header .button h3 {
+    font-size: 0.4em;
+  }
+  #header .button h1 {
+    font-size: 0.5em;
+    font-weight: 700;
+    margin: 1px 0 1px;
+  }
+  #header .button h1 span {
+    color: #e80707;
+    font-size: 4px;
+  }
+  #header .button a {
+    font-family: Montserrat;
+    color: #000;
+    font-size: 0.2em;
+    -webkit-text-decoration: underline #e80707;
+            text-decoration: underline #e80707;
+    transition: 0.6s;
+  }
+  #header .button a:hover {
+    cursor: pointer;
+    transition: 0.6s;
+    color: #e80707;
+  }
+  #header .button a i {
+    font-size: 0.6vw;
+    color: red;
+  }
+  #header .button .pop_up {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 2em;
+    top: 2em;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0%);
+    transition: 0.4s ease-in-out;
+  }
+  #header .button .pop_up.active {
+    transform: translateY(1%) scale(90%) translateX(-3%);
+  }
+  #header .button .pop_up_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #header .button .pop_up_body {
+    margin: auto;
+    width: 30vw;
+    height: 36vw;
+    background-color: #000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 18px 15px 60px 15px;
+    position: relative;
+  }
+  #header .button .pop_up_body h1 {
+    font-size: 1.6vw;
+    font-family: Montserrat;
+    color: #fff;
+    margin: 25px 0 18px;
+  }
+  #header .button .pop_up_body p {
+    font-size: 0.8vw;
+    font-family: Montserrat;
+    color: #fff;
+    margin-bottom: 0;
+  }
+  #header .button .pop_up_body input {
+    display: block;
+    margin: 25px auto 0px auto;
+    width: 15vw;
+    padding: 14px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    font-family: montserrat;
+    font-weight: 500;
+    font-size: 1vw;
+    color: #000;
+  }
+  #header .button .pop_up_body input:focus {
+    outline: none;
+  }
+  #header .button .pop_up_body button {
+    cursor: pointer;
+    display: block;
+    width: 15em;
+    margin: 20px auto 0 auto;
+    padding: 15px 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 1vw;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #e80707;
+    transition: 0.5s;
+  }
+  #header .button .pop_up_body button:disabled {
+    cursor: not-allowed;
+  }
+  #header .button .pop_up_body button:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+  #header .button .pop_up_body .checkbox input {
+    margin: 21px 4px 9px 35px;
+    width: 2vw;
+    background-color: #e80707;
+    cursor: pointer;
+  }
+  #header .button .pop_up_body .checkbox h6 {
+    text-align: center;
+    display: flex;
+    color: #fff;
+    text-align: left;
+    font-size: 0.8vw;
+    padding: 20px 4px 1px 1px;
+    cursor: pointer;
+  }
+  #header .button .pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.1vw;
+    cursor: pointer;
+    color: #fff;
+  }
+  #header .button i {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.7vw;
+  }
+  #header .button .pop_up_ok {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 2em;
+    top: 2em;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(-44.5%) scale(0%);
+    transition: 0.4s ease-in-out;
+  }
+  #header .button .pop_up_ok.active {
+    transform: translateY(1%) scale(90%) translateX(-3%);
+  }
+  #header .button .pop_up_ok_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #header .button .pop_up_ok_body {
+    margin: auto;
+    width: 16vw;
+    height: 9vw;
+    background-color: #2e2d2d;
+    border-radius: 25px;
+    text-align: center;
+    padding: 9px 7px 30px 7px;
+    position: relative;
+  }
+  #header .button .pop_up_ok_body h1 {
+    font-size: 1vw;
+    font-family: Montserrat;
+    color: #fff;
+    margin: 18px 0 9px;
+  }
+  #header .button .pop_up_ok_body button {
+    cursor: pointer;
+    width: 9em;
+    margin: 10px auto 0 auto;
+    padding: 10px 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 0.8vw;
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    background-color: #e80707;
+    transition: 0.5s;
+  }
+  #header .menu nav {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #header .imgbox {
     margin-top: 10px;
@@ -1400,6 +2036,10 @@ section {
   font-size: 1vw;
   cursor: pointer;
 }
+#our_window .minitextbox {
+  display: flex;
+  align-items: flex-end;
+}
 #our_window .minitextbox p {
   border-right: 2px solid #757373;
   height: 9vh;
@@ -1412,6 +2052,144 @@ section {
 #our_window .minitextbox p span {
   color: #fff;
   font-weight: 700;
+}
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  #our_window {
+    padding: 130px 0;
+  }
+  #our_window .textbox {
+    display: flex;
+    flex-direction: column;
+    margin: 3px 0 0 10px;
+  }
+  #our_window .textbox h1, #our_window .textbox h6 {
+    font-size: 5vw;
+    text-align: left;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+  }
+  #our_window .textbox h1 span, #our_window .textbox h6 span {
+    font-weight: 700;
+  }
+  #our_window .textbox h6 {
+    font-size: 2.5vw;
+  }
+  #our_window .btnbox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  #our_window .btnbox .btn {
+    font-size: 1.5vh;
+    padding: 11px 87px;
+    margin: 9px;
+  }
+  #our_window .btnbox .btn span {
+    display: none;
+  }
+  #our_window .btnbox .btn-2 {
+    font-size: 1.4vh;
+    padding: 11px 75px;
+  }
+  #our_window .btnbox .btn-2 i {
+    margin-right: 5px;
+    font-size: 2vh;
+  }
+  #our_window .minitextbox p {
+    display: none;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 424px) {
+  #our_window {
+    padding: 130px 0;
+  }
+  #our_window .textbox {
+    display: flex;
+    flex-direction: column;
+    margin: 3px 0 0 10px;
+  }
+  #our_window .textbox h1, #our_window .textbox h6 {
+    font-size: 5vw;
+    text-align: left;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+  }
+  #our_window .textbox h1 span, #our_window .textbox h6 span {
+    font-weight: 700;
+  }
+  #our_window .textbox h6 {
+    font-size: 2.5vw;
+  }
+  #our_window .btnbox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  #our_window .btnbox .btn {
+    font-size: 1.5vh;
+    padding: 9px 91px;
+    margin: 9px;
+  }
+  #our_window .btnbox .btn span {
+    display: none;
+  }
+  #our_window .btnbox .btn-2 {
+    font-size: 1.4vh;
+    padding: 11px 75px;
+  }
+  #our_window .btnbox .btn-2 i {
+    margin-right: 5px;
+    font-size: 2vh;
+  }
+  #our_window .minitextbox p {
+    display: none;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  #our_window {
+    padding: 130px 0;
+  }
+  #our_window .textbox {
+    display: flex;
+    flex-direction: column;
+    margin: 3px 0 0 10px;
+  }
+  #our_window .textbox h1, #our_window .textbox h6 {
+    font-size: 5vw;
+    text-align: left;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+  }
+  #our_window .textbox h1 span, #our_window .textbox h6 span {
+    font-weight: 700;
+  }
+  #our_window .textbox h6 {
+    font-size: 2.5vw;
+  }
+  #our_window .btnbox {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  #our_window .btnbox .btn {
+    font-size: 2.3vh;
+    padding: 9px 91px;
+    margin: 9px;
+  }
+  #our_window .btnbox .btn span {
+    display: none;
+  }
+  #our_window .btnbox .btn-2 {
+    font-size: 2.3vh;
+    padding: 13px 72px;
+  }
+  #our_window .btnbox .btn-2 i {
+    margin-right: 5px;
+    font-size: 2vh;
+  }
+  #our_window .minitextbox p {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #our_window .textbox {
